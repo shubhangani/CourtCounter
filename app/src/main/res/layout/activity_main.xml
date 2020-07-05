@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center_horizontal"
+         android:padding="8dp"
+        android:textSize="36sp"
+        android:textColor="@android:color/black"/>/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:onClick="three"
+            android:text="+3 Points"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="two"
+            android:text="+2 points"
+            android:textSize="20sp"/>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:layout_marginTop="16dp"
+            android:textSize="20sp"
+        android:onClick="freethrow"/>
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Team B"
+          android:gravity="center_horizontal"
+          android:padding="8dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"
+          android:textSize="36sp"/>
+
+      <TextView
+          android:id="@+id/team_b_score"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:gravity="center_horizontal"
+          android:padding="8dp"
+          android:textSize="36sp"
+          android:textColor="@android:color/black"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="+3 Points"
+          android:layout_marginTop="36dp"
+          android:onClick="threeB"
+          android:textSize="20sp"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="+2 points"
+          android:layout_marginTop="16dp"
+          android:onClick="twoB"
+          android:textSize="20sp"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Free Throw"
+          android:layout_marginTop="16dp"
+          android:onClick="freethrowB"
+          android:textSize="20sp" />
+  </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:onClick="reset"/>
+    </RelativeLayout>
+
+
